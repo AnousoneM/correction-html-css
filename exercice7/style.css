@@ -1,0 +1,18 @@
+legend{
+    background-color: inherit; /* Nous utilisons la propriété héritage pour que l'élement soit de même couleur que l'élément parent, ici, l'id du fieldset*/
+  }
+  
+  #identity { /*Partie formulaire identite*/
+    background-color: #2574A9;
+    width: 70vw;
+  }
+  
+  #delivery { /*Partie formulaire livraison*/
+    background-color: #9A12B3;
+    width: 70vw;
+  }
+  
+  #payment { /*Partie formulaire réglement*/
+    background-color: #DB0A5B;
+    width: 70vw;
+  }

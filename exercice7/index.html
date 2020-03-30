@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+        <meta charset="UTF-8">
+        <title>Exercice 7</title>
+        <!-- Utilisation de balise <link> pour lier notre feuille de style à notre page index.html -->
+        <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+        <!-- Il s'agit de l'énoncé sous forme d'image-->
+        <img src="img/enonce.PNG" alt="Enoncé Exercice 1">
+        <!-- Il s'agit de l'énoncé sous forme d'image -->
+
+        <form>
+                <!--début du formulaire-->
+                <fieldset id="identity">
+                        <legend>Votre identité</legend>
+                        <ol>
+                                <li><label for="lastname">Nom : </label><input type="text" name="lastname" id="lastname"
+                                                placeholder="Nom" required ></li>
+                                <li><label for="firstname">Prénom : </label><input type="text" name="firstname" id="firstname"
+                                                placeholder="Prénom" required ></li>
+                                <li><label for="mail">Adresse mail : </label><input type="email" name="mail" id="mail"
+                                                placeholder="Adresse mail" required ></li>
+                        </ol>
+                </fieldset>
+                <fieldset id="delivery">
+                        <legend>Adresse de livraison</legend>
+                        <ol>
+                                <li><label for="adress">Adresse : </label><textarea name="adress" id="adress"
+                                                rows="5" cols="20" required ></textarea></li>
+                                <li><label for="zipcode">Code postal : </label><input type="text" name="zipcode"
+                                                id="zipcode" placeholder="Code postal" required ></li>
+                                <li><label for="city">Ville : </label><input type="text" name="city" id="city"
+                                                placeholder="Ville" required ></li>
+                        </ol>
+                </fieldset>
+                <fieldset id="payment">
+                        <legend>Informations de réglement</legend>
+                        <ol>
+                                <li>Type de carte bancaire :<br>
+                                        <input type="radio" name="cardType" value="visa" id="visa" required ><label
+                                                for="visa"> VISA</label><br>
+                                        <input type="radio" name="cardType" value="mastercard"
+                                                id="mastercard" required ><label for="mastercard"> Mastercard</label>
+                                </li>
+                                <li><label for="cardNumber">Numéro de carte : </label><input type="text"
+                                                name="cardNumber" id="cardNumber" placeholder="Numéro de carte" required >
+                                </li>
+                                <li><label for="securityCode">Code de sécurité : </label><input type="text"
+                                                name="securityCode" id="securityCode"
+                                                placeholder="Code de sécurité" required ></li>
+                                <li><label for="cardOwner">Nom du titulaire : </label><input type="text"
+                                                name="cardOwner" id="cardOwner"
+                                                placeholder="Nom du titulaire" required ></li>
+                        </ol>
+                </fieldset>
+                <input type="submit" name="submit" value="J'achète !" />
+        </form>
+        <!--fin du formulaire-->
+
+</body>
+
+</html>
