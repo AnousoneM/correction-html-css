@@ -1,0 +1,79 @@
+/* Afin d'utiliser les pourcentages en hauteur, nous définissons la taille de 100% pour le body et html */
+body, html {
+    height: 100%;
+}
+
+
+/* Mise en place des conteneurs parents */
+#firstRow {
+    display: flex;
+    height: 15%; /* Par rapport au parent = body */
+}
+
+#secondRow {
+    display: flex;
+    height: 30%; /* Par rapport au parent = body */
+}
+
+#othersRectangles{
+    display: flex;
+    flex-wrap: wrap;
+    width: 66vh;  
+}
+
+#thirdRow {
+    display: flex;
+    height: 30%; /* Par rapport au parent = body */
+}
+
+
+#greenRectangle {
+    /* utilisation de l'attribut float : left pour forcer que les éléments se stack à gauche */
+    background-color: #2ecc71;
+    /* utilisation de l'unité vw qui correspond au vw de l'écran */
+    width: 80vw;
+}
+
+#blueRectangle {
+    background-color: #2980b9;
+    width: 20vw;
+}
+
+#redRectangle {
+    background-color: #e74c3c;
+    width: 34vw;
+}
+
+#orangeRectangle {
+    background-color: #e67e22;
+    width: 33vh;
+}
+
+#greyRectangle {
+    background-color: #95a5a6;
+    width: 33vh;
+}
+
+#yellowRectangle {
+    background-color: #f39c12;
+    width: 34%;
+    height: 10vh;
+}
+
+#tealRectangle {
+    background-color: #16a085;
+    width: 33%;
+    height: 10vh;
+}
+
+#darkOrangeRectangle {
+    background-color: #d35400;
+    width: 33%;
+    height: 10vh;
+}
+
+#darkGreyRectangle {
+    background-color: #2c3e50;
+    width: 100vw;
+    height: 20vh;
+}
